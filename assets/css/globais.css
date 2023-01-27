@@ -1,0 +1,37 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    /* margin-top: 100px; */
+    background: #C5C5C5;
+    padding-right: 0;
+    margin-top: 100px;
+}
+
+.nav-item >  p {
+    font: 14px white;
+}
+
+/* Barra de navegação*/
+
+.navbar {
+    background-color: #353D41;
+}
+
+#logo {
+    width: 180px;
+}
+
+#navbar-links a {
+    color: #fff;
+}
+#iconLogin{
+    width: 15px;
+    height:20px;
+}
+
+/* Rodapé  */
+.footer{
+    color: white;
+}
+footer{
+    margin-right: 0;
+}
