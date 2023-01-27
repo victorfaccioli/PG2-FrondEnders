@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnders</title>
+</head>
+<body>
+    <header>
+        <nav></nav>
+            <div class="logo">
+
+            </div>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="plans.html">Saiba mais</a>
+                <a href="waitingList.html">Inscreva-se</a>
+                <a href="contact.html">Contato</a>
+                <a href="login.html"><img src="assets/img/iconLogin.svg" alt="">Login</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Aqui você pode se cadastrar em nossa lista de espera.</h1>
+        <form action="">
+            <h2>Lista de espera</h2>
+            <div class="content1">
+                <div class="inputName">
+                    <label for="">Nome</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="inputPassword">
+                    <label for="">Senha</label>
+                    <input type="text" id="password" name="password" minlength="8" required>
+                </div>
+                <div class="iCep">
+                    <label for="">CEP</label>
+                    <input type="text" id="cep" name="cep" maxlength="8" required>
+                </div>
+                <div class="iState">
+                    <label for="">Estado</label>
+                    <input type="text" id="state" name="state" required>
+                </div>
+                <div class="iCity">
+                    <label for="">Cidade</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div class="iSt">
+                    <label for="">Rua</label>
+                    <input type="text" id="st" name="st" required>
+                </div>
+                <div class="iNumber">
+                    <label for="">Numero</label>
+                    <input type="number" id="number" name="number" required >
+                </div>
+            </div>
+            <div class="content2">
+                <div class="innputContent2">
+                    <label for="">E-mail</label>
+                    <input type="text" name="email" id="email" required>
+                </div>
+                <div class="innputContent2">
+                    <label for="">Confirmação de senha</label>
+                    <input type="text" name="passwordConfirmation" id="passwordConfirmation" minlength="8" required>
+                </div>
+                <div class="innputContent2">
+                    <label for="">Bairro</label>
+                    <input type="text" name="neighborhood" id="neighborhood" required> 
+                </div>
+                <div class="innputContent2">
+                    <label for="">Complemento</label>
+                    <input type="text" name="complement" id="complement" maxlength="50" required>
+                </div>
+                <button id="btn">Enviar</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p class="footer">
+            Copyright © 2023 de  FrontEnders. Todos os direitos reservados
+        </p>
+    </footer>
+
+    <script src=""></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</body>
+</html>
