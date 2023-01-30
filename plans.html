@@ -1,66 +1,81 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- jquery  -->
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <!-- Estilos -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/globais.css">
+    <link rel="stylesheet" href="assets/css/plans.css">
     <title>FrontEnders</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-end" id="navbar">
-            <div class="container-fluid">
-            <img class="navbar-brand" id="logo" src="/assets/img/logoEmpresa.png" alt="Front Enders">
-              <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-item nav-link" id="home-menu" href="index.html">Home</a>
-                  </li> <li class="nav-item">
-                    <a class="nav-item nav-link" id="saibamais-menu" href="plans.html">Saiba mais</a>
-                  </li> <li class="nav-item">
-                    <a class="nav-item nav-link" id="inscrevase-menu" href="waitingList.html">Inscreva-se</a>
-                  </li> <li class="nav-item">
-                    <a class="nav-item nav-link" id="contato-menu" href="contact.html">Contato</a>
-                  </li> <li class="nav-item">
-                    <a class="nav-item nav-link" id="login-menu" href="login.html"><img src="/assets/img/iconLogin.svg" alt="" id="iconLogin">Login</a>
-                  </li>
-              </div>
-            </div>
-          </nav>
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <a href="#" class="navbar-brand">
+                    <img id="logo" src="/assets/img/logoEmpresa.png" alt="Front Enders">
+                </a>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" id="home-menu" href="index.html">Home</a>
+                        <a class="nav-item nav-link" id="saibamais-menu" href="plans.html">Saiba mais</a>
+                        <a class="nav-item nav-link" id="inscrevase-menu" href="waitingList.html">Inscreva-se</a>
+                        <a class="nav-item nav-link" id="contato-menu" href="contact.html">Contato</a>
+                        <a class="nav-item nav-link" id="login-menu" href="login.html"><img
+                                src="assets/img/iconLogin.svg" alt="" id="iconLogin">Login</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
         <h1>Planos</h1>
-        <div class="card1">
-            <img class="imgCard" src="" alt="">
-            <h6 class="titleCard">Toninho Kids</h6>
-            <p class="textCard"></p>
+        <div class="container">
+            <div class="content">
+                <div class="card1">
+                    <img class="imgCard" src="assets/img/toninhoLapis.png" alt="">
+                    <h6 class="titleCard">Toninho Kids</h6>
+                    <p class="textCard"></p>
+                </div>
+                    <button class="btnCard">Inscreva-se</button>
+            </div>
+            <div class="content">
+                <div class="card2">
+                    <img class="imgCard" src="assets/img/toninhoLivro.png" alt="">
+                    <h6 class="titleCard">Toninho Standart</h6>
+                    <p class="textCard"></p>
+                </div>
+                <div class="btn">
+                    <button class="btnCard">Inscreva-se</button>
+                </div>
+            </div>              
+            <div class="content">
+                <div class="card3">
+                    <img class="imgCard" src="assets/img/toninhoDinheiro.png" alt="">
+                    <h6 class="titleCard">Toninho Plus</h6>
+                    <p class="textCard"></p>
+                </div>
+                <div class="btn">
+                    <button class="btnCard">Inscreva-se</button>
+                </div>
+            </div>  
         </div>
-        <button class="btnCard">Inscreva-se</button>
-        <div class="card2">
-            <img class="imgCard" src="" alt="">
-            <h6 class="titleCard">Toninho Standart</h6>
-            <p class="textCard"></p>
-        </div>
-        <button class="btnCard">Inscreva-se</button>
-        <div class="card3">
-            <img class="imgCard" src="" alt="">
-            <h6 class="titleCard">Toninho Plus</h6>
-            <p class="textCard"></p>
-        </div>
-        <button class="btnCard">Inscreva-se</button>
     </main>
-    <footer class="navbar navbar-expand-lg navbar-nav" id="footer">
-        <p class="footer">Copyright © 2023 de  FrontEnders. Todos os direitos reservados</p>
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <footer class="navbar navbar-expand-lg navbar-nav justify-content-center absolute-bottom">
+        <p class="footer">Copyright © 2023 de FrontEnders. Todos os direitos reservados</p>
+    </footer>
+    <script src=""></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </body>
 </html>
