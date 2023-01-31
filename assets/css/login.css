@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#container{
+    display: flex;
+    height: 400px;
+    width: 80%;
+    margin-bottom: 53px;
+    border: solid #9471C1;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    
+}
+
+#voando{
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border-radius: 18px 0px 0px 18px;
+    width: 511px;
+    height: 396px;
+
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.content img{
+    width: 10%;
+}
+
+.titleLogin{
+    margin: 0px;
+    width: 100%;
+    border: solid
+}
+
+.form{
+    width: 300px;
+    height: 500px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background: #ffff;
+    border-radius: 20px;
+    
+}
+
