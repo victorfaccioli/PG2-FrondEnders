@@ -1,0 +1,68 @@
+
+main{
+    margin: 50px;
+    font-family: 'Nunito', bold, sans-serif;
+
+}
+h1{
+    display: flex;
+    justify-content: center;
+    font-size:xx-large;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 80px;
+}
+.content1{
+    display: flex;
+    flex-direction: row;
+}
+.content2{
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.imgContact{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    box-shadow:  2px 2px 2px 2px  #101010a5;
+
+}
+.contactText{
+    display: flex;
+    flex-direction: column;
+    margin:40px;
+    padding-top: 20px;
+}
+.name{
+    font-size:xx-large;
+    font-weight: bold;
+    letter-spacing: 2px;
+    
+}
+
+
+
+  @media (max-width: 768px) {
+    .content1, .content2{
+      max-width: 720px;
+      flex-direction: column;
+      align-items:center ;
+      margin: 20px;
+    }
+    .content2{
+        text-align: left;
+    }
+  }
+  @media (max-width: 576px) {
+    .content1, .content2 {
+      max-width: 540px;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+    }
+    .content2{
+        text-align: left;
+    }
+  } 
