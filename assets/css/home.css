@@ -1,0 +1,110 @@
+main{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Nunito', bold, sans-serif;
+}
+/* ------------Banner inicial home   */
+.content1 {
+    display: flex;
+    justify-content: center;
+    margin:10px;
+    margin-left: 300px;
+    margin-right: 300px;
+;
+}
+
+.content1 img{
+    width: 900px;
+    height: 300px;
+}
+/* --------------- Titulo e subtitulo  */
+.title {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    height: 100px;
+    background-color: #464646;
+
+}
+
+.title > h1 {
+    color: white;
+    display:flex;
+    align-items: center;
+}
+
+.sub-title {
+    font-family: 'Nunito', bold, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    height: 140px;
+    background-color: #343232;
+
+}
+
+.text{
+    color: white;
+    display:flex;
+    justify-content: center;
+}
+
+
+/* ------------Cards centrais  */
+.content2{
+    display: flex;
+    flex-direction: row;
+}
+
+.content2 h4, p{
+    text-align: center;
+}
+.content2 h4{
+    padding-bottom: 30px;
+    font-weight: bold;
+}
+.card1, .card2, .card3{
+    margin: 60px;
+    background: #b37ef5;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+/* -------------- Apresentação Toninho  */
+.content3{
+    display: flex;
+    flex-direction: row;
+}
+.square1 , .square2{
+    text-align: center;
+}
+.square1 h3{
+    text-align: left;
+    margin-left: 160px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+.square2{
+    margin-top: 200px;
+    margin-right: 100px;
+    margin-left: 50px;
+}
+.square2 button{
+    background: #b37ef5;
+    height: 40px;
+    width: 180px;
+    border-radius: 20px;
+}
+.square2 button:hover{
+    background-color: #464646;
+}
+.square2 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
