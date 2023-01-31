@@ -30,59 +30,91 @@
         </div>
     </header>
     <main>
-        <h1>Aqui você pode se cadastrar em nossa lista de espera.</h1>
-        <form action="">
-            <h2>Lista de espera</h2>
+        <div class="image"> </div>
+        <h1 class="text-center" id="h1">Aqui você pode se cadastrar em nossa lista de espera.</h1>
+
+        <form class="container card pb-4" id="formulario" action="">
+            <h2 class="text-center"" id="listaEspera">Lista de espera</h2>
             <div class="content1">
-                <div class="inputName">
-                    <label for="">Nome</label>
-                    <input type="text" id="name" name="name" required>
+                <div class="row mb-4">
+                    <div class="col">
+                      <div class="form-outline col-md-11">
+                        <input type="text" id="formNome" class="form-control" required/>
+                        <label class="form-label" for="form6Example1">Nome</label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-outline col-md-11">
+                        <input type="text" id="formEmail" class="form-control" required/>
+                        <label class="form-label" for="form6Example2">E-mail</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row mb-4">
+                    <div class="col">
+                      <div class="form-outline col-md-11">
+                        <input type="text" id="formSenha" class="form-control" required/>
+                        <label class="form-label" for="form6Example1">Senha</label>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="form-outline col-md-11">
+                        <input type="text" id="formConfirmarSenha" class="form-control" required />
+                        <label class="form-label" for="form6Example2">Confirmar senha</label>
+                      </div>
+                    </div>
                 </div>
-                <div class="inputPassword">
-                    <label for="">Senha</label>
-                    <input type="text" id="password" name="password" minlength="8" required>
-                </div>
-                <div class="iCep">
-                    <label for="">CEP</label>
-                    <input type="text" id="cep" name="cep" maxlength="8" required>
-                </div>
-                <div class="iState">
-                    <label for="">Estado</label>
-                    <input type="text" id="state" name="state" required>
-                </div>
-                <div class="iCity">
-                    <label for="">Cidade</label>
-                    <input type="text" id="city" name="city" required>
-                </div>
-                <div class="iSt">
-                    <label for="">Rua</label>
-                    <input type="text" id="st" name="st" required>
-                </div>
-                <div class="iNumber">
+                <div class="row mb-4">
+                  <div class="col"> 
+                        <div class="form-outline col-md-12">
+                            <label for="inputCity" form="form-label">CEP</label>
+                            <input type="text" class="form-control" id="inputCEP" required>
+                        </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-outline col-md-8">
+                            <label for="inputState">Estado</label>
+                            <input type="text" class="form-control" id="inputEstado" required>
+                        </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-outline col-md-12">
+                            <label for="inputZip">Cidade</label>
+                            <input type="text" class="form-control" id="inputCidade" required>
+                        </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-outline col-md-9">
+                            <label for="inputZip">Bairro</label>
+                            <input type="text" class="form-control" id="inputBairro" required>
+                      </div>
+                      </div>
+                    </div>
+                    <div class="row mb-4">
+                      <div class="form-outline col-md-3">
+                    <label for="input">Rua</label>
+                    <input type="text" id="st" name="st" class="form-control" required>
+                      </div>
+                <div class="col">
+                <div class="form-outline col-md-5">
                     <label for="">Numero</label>
-                    <input type="number" id="number" name="number" required >
+                    <input type="number" id="number" name="number" class="form-control" required  >
                 </div>
             </div>
-            <div class="content2">
-                <div class="innputContent2">
-                    <label for="">E-mail</label>
-                    <input type="text" name="email" id="email" required>
-                </div>
-                <div class="innputContent2">
-                    <label for="">Confirmação de senha</label>
-                    <input type="text" name="passwordConfirmation" id="passwordConfirmation" minlength="8" required>
-                </div>
-                <div class="innputContent2">
-                    <label for="">Bairro</label>
-                    <input type="text" name="neighborhood" id="neighborhood" required> 
-                </div>
-                <div class="innputContent2">
+                <div class="col">
+                <div class="form-outline col-md-10">
                     <label for="">Complemento</label>
-                    <input type="text" name="complement" id="complement" maxlength="50" required>
+                    <input type="text" name="complement" id="complement" maxlength="50" class="form-control" required>
                 </div>
-                <button id="btn">Enviar</button>
+                
             </div>
+            
+        </div>
+        <div class="row justify-content-center">
+        <button class="col-2 .btn " id="btn">Enviar</button>
+        </div>
         </form>
+        
     </main>
     <footer>
         <footer class="navbar navbar-expand-lg navbar-nav justify-content-center absolute-bottom">
