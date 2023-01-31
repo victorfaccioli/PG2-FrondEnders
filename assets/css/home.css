@@ -58,11 +58,12 @@ main{
     padding-bottom: 30px;
     font-weight: bold;
 }
-.card1, .card2, .card3{
+.card{
     margin: 60px;
     background: #b37ef5;
     padding: 30px;
     border-radius: 20px;
+    border: solid #464646;
 }
 .textCard{
     font-size: larger;
@@ -92,6 +93,7 @@ main{
     width: 220px;
     margin: 40px;
     border-radius: 20px;
+    border: solid #464646;
 }
 .square2 button:hover{
     background-color: #464646;
