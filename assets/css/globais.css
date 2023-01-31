@@ -26,6 +26,7 @@
     #iconLogin{
         width: 15px;
         height:20px;
+        margin-right: 5px;
     }
     .navbar-collapse{
        flex-grow:0 !important; 
