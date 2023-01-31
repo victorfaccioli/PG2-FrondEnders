@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main > h1{
+    text-align: center;
+
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.card1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #F6EF46;
+    border: solid #3C3E03;
+    border-radius: 10px;     
+}
+.card2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #B99AE0;
+    border: solid #6A00F0;
+    border-radius: 10px;  
+}
+.card3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #7DABF0;
+    border: solid #005FED;
+    border-radius: 10px;  
+}
+
+.btnCard{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: solid #3742FA;
+}
+@media screen and (min-width: 1024px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+      display: flex;
+      justify-content: space-around; 
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
