@@ -4,46 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+     <!-- Estilos -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/globais.css">
     <title>FrontEnders</title>
 </head>
 <body>
     <header>
-        <nav></nav>
-            <div class="logo"></div>
-            <div class="menu">
-                <a href="">Home</a>
-                <a href="">Saiba mais</a>
-                <a href="">Inscreva-se</a>
-                <a href="">Contato</a>
-                <a href=""><img src="assets/img/iconLogin.svg" alt="">Login</a>
-        </nav>
+        <div class="container" id="nav-container">
+          <nav class="navbar navbar-expand-lg fixed-top">
+            <a href="#" class="navbar-brand">
+                <img id="logo" src="/assets/img/logoEmpresa.png" alt="Front Enders">
+            </a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" id="home-menu" href="index.html">Home</a>
+                <a class="nav-item nav-link" id="saibamais-menu" href="plans.html">Saiba mais</a>
+                <a class="nav-item nav-link" id="inscrevase-menu" href="waitingList.html">Inscreva-se</a>
+                <a class="nav-item nav-link" id="contato-menu" href="contact.html">Contato</a>
+                <a class="nav-item nav-link" id="login-menu" href="login.html"><img src="assets/img/iconLogin.svg" alt="" id="iconLogin">Login</a>
+              </div>
+            </div>
+         </nav>
+        </div>
     </header>
-    <body class="container">
+    <main class="container">
         <div class="content1">
-            <h1>The FrontEnders apresenta:</h1>
             <img src="assets/img/Ai.png" alt="">
         </div>
-        <div class="content2">
-            <h2>Lançamento</h2>
-            <p class="textContent2">Toninho, seu Dev'zinho</p>
-            <p class="textContent2">Seu robo assistente virtual de programação</p>
+        <div class="title">
+            <h1>Lançamento</h1>
         </div>
-        <div class="content3">
-            <h2>IA Toninho</h2>
+        <div class="sub-title">
+            <h2 class="text">Toninho, seu Dev'zinho</h2>
+            <h2 class="text">Seu robo assistente virtual de programação</h2>
+        </div>
+        <div class="content1">
+           <div class="card1">
+           <h4 class="title_card">IA</h4>
+           <p class="textCard">
+
+           </p>
+           </div>
+           <div class="card2">
+             <h4 class="title_card">Auxiliar de  programadores</h4>
+             <p class="textCard">
+ 
+             </p>
+           </div>
+           <div class="card3">
+             <h4 class="title_card">Em qualquer lugar</h4>
+             <p class="textCard">
+
+             </p>
+           </div>
+        <div class="content2">
+            <h3>IA Toninho</h3>
             <img src="assets/img/toninhoHome.svg" alt="">
-            <p class="textContent3">Olá, me chamo toninho, seu dev’zinho.
+            <p class="textContet2">Olá, me chamo toninho, seu dev’zinho.
                 Nasci para te ajudar a se tornar um programador melhor e melhorar suas habilidades na área da Programação
-                 Sou um robo que você pode ter sua casa ou em qualquer lugar!</p>
+                 Sou um robo que você pode ter sua casa ou em qualquer lugar!
+            </p>
         </div>
         <button><a href="">Pré-Venda</a></button>
-    </body>
-    <footer>
-        <p class="footer">Copyright © 2023 de  FrontEnders. Todos os direitos reservados</p>
-    </footer>
 
-    <script src=""></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <footer class="navbar navbar-expand-lg navbar-nav justify-content-center absolute-bottom">
+            <p class="footer">Copyright © 2023 de  FrontEnders. Todos os direitos reservados</p>
+        </footer>
+    
+        <script src=""></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </body>
 </html>
