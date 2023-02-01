@@ -1,67 +1,127 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', bold, sans-serif;
 }
 main > h1{
+    margin: 20px;
     text-align: center;
-
 }
-.content{
+h6{
+    font-weight: bold;
+    font-size: larger;
+}
+html, body{
+    height: 100%;
+}
+.container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container img{
+    height: 250px;
+    width: 210px;
+}
+.card{
+    position: relative;
+    height: 348px;
+    width: 250px;
+    margin: 20px;
+}
+
+
+.card .flip{
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+.card:hover .flip {
+    transform: rotateY(180deg);
+}
+
+.frontCard, .backCard{
+    backface-visibility: hidden;
+}
+.backCard{
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+} 
+.frontCard{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 10px;
-    gap: 10px;
+    position: absolute;
+    padding-left: 20px;
+
+}
+.backCard h3{
+    font-weight: bold;
+    font-size: larger;
 }
 
-.card1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+
+#card1{
     background-color: #F6EF46;
     border: solid #3C3E03;
     border-radius: 10px;     
 }
-.card2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+#card2{
     background-color: #B99AE0;
     border: solid #6A00F0;
     border-radius: 10px;  
 }
-.card3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+#card3{
     background-color: #7DABF0;
     border: solid #005FED;
     border-radius: 10px;  
 }
-
+.btn{
+    padding-left: 47px;
+    padding-right: 47px;
+    margin-bottom: 20px;
+}
 .btnCard{
     width: 200px;
     height: 40px;
     border-radius: 5px;
-    border: solid #3742FA;
+    border: solid #212529;
 }
-@media screen and (min-width: 1024px){
-    main{
-        display: flex;
-        flex-direction: column;
+.btn button:hover{
+    background-color: #6d6d6d;
+}
+.btnCard a{
+    text-decoration: none;
+    color: #212529;
+    font-weight: bold;
+}
+@media (max-width: 992px) {
+    .content2, .content3 {
+      max-width: 960px;
+      flex-direction: column;
+      align-items: center;
+      margin:20px;
     }
-    .container {
-      display: flex;
-      justify-content: space-around; 
+@media (max-width: 768px) {
+    .container{
+      max-width: 720px;
+      flex-direction: column;
+      align-items:center ;
+      margin: 20px;
     }
-    .content{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+  }
+  @media (max-width: 576px) {
+    .container{
+      max-width: 540px;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
     }
+
+  }
 }
