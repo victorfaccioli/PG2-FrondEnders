@@ -3,20 +3,18 @@ main{
     flex-direction: column;
     font-family: 'Nunito', bold, sans-serif;
 }
+
 /* ------------Banner inicial home   */
 .content1 {
     display: flex;
     justify-content: center;
-    margin:10px;
-    margin-left: 300px;
-    margin-right: 300px;
-;
+    margin-top:10px;
 }
-
 .content1 img{
     width: 900px;
     height: 300px;
 }
+
 /* --------------- Titulo e subtitulo  */
 .title {
     display: flex;
@@ -26,13 +24,11 @@ main{
     background-color: #464646;
 
 }
-
 .title > h1 {
     color: white;
     display:flex;
     align-items: center;
 }
-
 .sub-title {
     font-family: 'Nunito', bold, sans-serif;
     display: flex;
@@ -43,13 +39,11 @@ main{
     background-color: #343232;
 
 }
-
 .text{
     color: white;
     display:flex;
     justify-content: center;
 }
-
 
 /* ------------Cards centrais  */
 .content2{
@@ -64,11 +58,15 @@ main{
     padding-bottom: 30px;
     font-weight: bold;
 }
-.card1, .card2, .card3{
+.card{
     margin: 60px;
     background: #b37ef5;
     padding: 30px;
     border-radius: 20px;
+    border: solid #464646;
+}
+.textCard{
+    font-size: larger;
 }
 
 /* -------------- Apresentação Toninho  */
@@ -78,33 +76,97 @@ main{
 }
 .square1 , .square2{
     text-align: center;
+    font-size: larger;
 }
 .square1 h3{
-    text-align: left;
-    margin-left: 160px;
+    display: flex;
+    justify-content: center;
     margin-top: 50px;
     font-weight: bold;
 }
 .square2{
-    margin-top: 200px;
-    margin-right: 100px;
-    margin-left: 50px;
+    margin:100px;
 }
 .square2 button{
     background: #b37ef5;
-    height: 40px;
-    width: 180px;
+    height: 60px;
+    width: 220px;
+    margin: 40px;
     border-radius: 20px;
+    border: solid #464646;
 }
 .square2 button:hover{
-    background-color: #464646;
+    background-color: #6d6d6d;
 }
 .square2 a{
     text-decoration: none;
-    color: black;
+    color: #212529;
     font-weight: bold;
 }
 
+/* ------------- Responsividade  */
+/* ----------- Textos  */
+@media (max-width: 992px) {
+    .content2, .content3 {
+      max-width: 960px;
+      flex-direction: column;
+      margin:0;
+    }
+    .title,.sub-title{
+      max-width: 960px;
+    }
+  }
+  @media (max-width: 768px) {
+    .content2, .content3{
+      max-width: 720px;
+      flex-direction: column;
+      margin:0;
+    }
+    .title, .sub-title{
+      max-width: 720px;
+    }
+  }
+  @media (max-width: 576px) {
+    .content2, .content3 {
+      max-width: 540px;
+      flex-direction: column;
+      margin:0;
+    }
+    .title, .sub-title{
+      max-width: 540px;
+    }
+  } 
 
+/* ------------ Banner  */
+@media (max-width: 992px){
+.content1 > img{
+    max-width: 500px;
+    height: 200px;
+}
+}
+@media (max-width: 768px){
+.content1 > img{
+        max-width: 400px;
+        height: 150px;
+}
+}
+@media (max-width: 576px){
+.content1 > img{
+        max-width: 350px;
+        height: 130px;
+}
+}    
 
-
+/* ------------ Imagem Toninho */
+@media (max-width: 992px){
+    .square1 > img{
+        max-width: 500px;
+        height: 500px;
+    }
+    }
+    @media (max-width: 576px){
+    .square1 > img{
+            max-width: 350px;
+            height: 350px;
+    }
+    }
