@@ -96,11 +96,11 @@ main{
     border: solid #464646;
 }
 .square2 button:hover{
-    background-color: #464646;
+    background-color: #6d6d6d;
 }
 .square2 a{
     text-decoration: none;
-    color: black;
+    color: #212529;
     font-weight: bold;
 }
 
