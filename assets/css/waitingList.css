@@ -4,6 +4,7 @@
     vertical-align:baseline;
     list-style:none;
     border:0;
+    font-family: 'Nunito', bold, sans-serif !important;
     color:black;
 
 }
@@ -21,7 +22,6 @@ input{
 #listaEspera{
 padding-bottom: 18px;
 margin-top: 10px;
-font-family: 'Nunito';
 font-style: normal;
 font-weight: 700;
 font-size: 36px;
