@@ -63,15 +63,11 @@ margin-top: 150px;
     white-space: nowrap;
 }
 
-.image{
-    background-image: url("../img/ToninhoForm.png");
-    height: 500px;
-    width: 100%;
+#image{
+    background-image: url("../img/ToninhoForm (1).png");
+    height: 200px;
+    width: 280px;
     background-repeat: no-repeat, no-repeat;
     background-position: right, left; 
-    z-index: 1;
-    position: absolute;
-    width: 100%;
-    top: 500px
 
 }
