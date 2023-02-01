@@ -8,9 +8,11 @@
 
 }
 main, body, html{
-    background-color: #C5C5C5 !important;
+    background-color: #c5c5c5 !important;
 }
-
+html{
+    width: auto
+}
 input{
     background-color: white!important;
     border-radius:40px!important;
@@ -23,7 +25,8 @@ font-family: 'Nunito';
 font-style: normal;
 font-weight: 700;
 font-size: 36px;
-line-height: 100%;}
+line-height: 100%;
+}
 
 #h1{
     font-family: 'Inter';
@@ -34,19 +37,20 @@ line-height: 130%;
 text-align: center;
 color: #4834D4;
 margin-top: 150px;
+margin-bottom: 80px;
 }
 
 
-#formulario{
+#Form{
+    border-color: #D9D9D9;
     border-radius: 30px;
     border-color: #7D23F0;
     padding: 10px;
     border-width: 2px;
     padding-top: 16px;
     padding-left: 60px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     margin-top: 100px;
-    background-color: #D9D9D9;
 }
 
 #btn {
@@ -62,16 +66,25 @@ margin-top: 150px;
 	text-decoration:none;
     white-space: nowrap;
 }
+#email[type="text"], input[type="email"]{
+  padding: 4px;
+  border-radius: 5px;
+  
+}
 
-.image{
-    background-image: url("../img/ToninhoForm.png");
-    height: 500px;
-    width: 100%;
-    background-repeat: no-repeat, no-repeat;
-    background-position: right, left; 
-    z-index: 1;
-    position: absolute;
-    width: 100%;
-    top: 500px
+#email:invalid{
+  border-color: crimson;
+  box-shadow: 0px 0px 3px crimson;
+}
 
+#email:focus{
+  outline: none;
+}
+
+#email:focus:invalid{
+  box-shadow: none;
+}
+
+#error{
+  color: crimson;
 }
