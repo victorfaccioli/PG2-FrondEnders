@@ -1,3 +1,4 @@
+//validação email para recuperação de senha
 $(document).ready(function() {
   $("#email").on("input", function() {
     var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;

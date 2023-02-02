@@ -1,3 +1,4 @@
+// função de validação do cep
   $(document).ready(function() {
 
     function limpa_formulário_cep() {
@@ -46,8 +47,7 @@
         }
     });
 });
-
-
+//função de validação senha e confirma senha
 $(document).ready(function() {
   // Adiciona um evento de input aos elementos com as IDs "senha" e "confirmarSenha"
   $('#senha, #confirmarSenha').on('input', function() {
