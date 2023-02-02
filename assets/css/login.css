@@ -109,12 +109,17 @@ main{
     font-family: 'Inter', sans-serif;
 }
 
+.btn >a{
+    justify-content: center;
+    color: black;
+}
+
 
 /* Aqui é o olho que mostra e oculta a senha */
 .olho {
     display: flex;
     position: relative;
-    bottom: 50px;
+    bottom: 40px;
     align-self: flex-end;
     cursor: pointer;
     
