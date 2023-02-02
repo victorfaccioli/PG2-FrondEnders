@@ -1,4 +1,3 @@
-
 document.getElementById('olho').addEventListener('mousedown', function() {
     document.getElementById('pass').type = 'text';
   });
@@ -13,6 +12,7 @@ document.getElementById('olho').addEventListener('mousedown', function() {
   });
 
 $(document).ready(function() {
+
   
   // Adiciona um evento "input" para o elemento "email"
   $("#email").on("input", function() {
@@ -40,8 +40,9 @@ $(document).ready(function() {
       
       // Remove a classe "custom-error" e oculta o "error"
       $("#error").removeClass("custom-error").hide();
+   
       
-    // Se o email for inválido
+      // Se o email for inválido
     } else {
       
       // Remove a classe "custom-input" e adiciona a classe "custom-error"
@@ -52,3 +53,4 @@ $(document).ready(function() {
     }
   });
 });
+
