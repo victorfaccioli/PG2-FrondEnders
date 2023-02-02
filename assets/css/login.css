@@ -109,6 +109,15 @@ main{
     cursor: pointer;
     
   }
+  .custom-input {
+    border-color: green !important;
+  }
+  
+  .custom-error {
+    border-color: red !important;
+    color: red !important;
+    display: inline-block !important;
+  }
   
 
 @media screen and (max-width: 500px){
