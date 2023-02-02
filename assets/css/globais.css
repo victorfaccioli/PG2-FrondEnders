@@ -6,7 +6,7 @@
     border:0
     }
     body {
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Inter', sans-serif;
         background: #C5C5C5;
     }
     .nav-item >  p {
@@ -22,6 +22,10 @@
     }
     .nav-link {
         color: #fff;
+        font-family: 'Nunito', sans-serif;
+    }
+    .nav-link:hover{
+        color: #F6CA06;
     }
     #iconLogin{
         width: 15px;
