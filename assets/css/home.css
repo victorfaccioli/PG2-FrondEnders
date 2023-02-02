@@ -91,7 +91,7 @@ main{
     background: #b37ef5;
     height: 60px;
     width: 220px;
-    margin: 40px;
+    margin: 40px 0px;
     border-radius: 20px;
     border: solid #464646;
 }
@@ -115,6 +115,9 @@ main{
     .title,.sub-title{
       max-width: 960px;
     }
+    .text{
+        text-align: center;
+    }
   }
   @media (max-width: 768px) {
     .content2, .content3{
@@ -125,6 +128,9 @@ main{
     .title, .sub-title{
       max-width: 720px;
     }
+    .text{
+        text-align: center;
+    }
   }
   @media (max-width: 576px) {
     .content2, .content3 {
@@ -134,6 +140,9 @@ main{
     }
     .title, .sub-title{
       max-width: 540px;
+    }
+    .text{
+        text-align: center;
     }
   } 
 
