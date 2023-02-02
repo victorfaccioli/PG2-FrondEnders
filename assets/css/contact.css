@@ -21,6 +21,19 @@ h1{
     flex-direction: row-reverse;
     text-align: right;
 }
+.icons{
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+}
+#iconsRight{
+  display: flex;
+  justify-content: right;
+}
+.imgIcons{
+  display: flex;
+  flex-direction: row;
+}
 
 .imgContact{
     height: 200px;
@@ -35,7 +48,7 @@ h1{
 .contactText{
     display: flex;
     flex-direction: column;
-    margin:40px;
+    margin:20px;
     padding-top: 20px;
 }
 
