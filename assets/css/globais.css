@@ -27,6 +27,9 @@
     .nav-link:hover{
         color: #F6CA06;
     }
+    .nav-link:hover{
+        color:#F6CA06;
+    }
     #iconLogin{
         width: 15px;
         height:20px;
