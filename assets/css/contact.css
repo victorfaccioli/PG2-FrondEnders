@@ -1,6 +1,6 @@
 
 main{
-    margin: 50px;
+    margin: 100px;
     font-family: 'Nunito', bold, sans-serif;
 
 }
@@ -29,6 +29,9 @@ h1{
     box-shadow:  2px 2px 2px 2px  #101010a5;
 
 }
+.imgContact:hover{
+  box-shadow: 5px 5px 37px 10px #000000;}
+
 .contactText{
     display: flex;
     flex-direction: column;
@@ -42,7 +45,9 @@ h1{
     letter-spacing: 2px;
     
 }
-
+.modal-body{
+  text-align: left;
+}
 
 
   @media (max-width: 768px) {
