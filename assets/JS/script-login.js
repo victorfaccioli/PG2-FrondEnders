@@ -1,29 +1,4 @@
 $(document).ready(function() {
-  // Adiciona um evento de input aos elementos com as IDs "senha" e "confirmarSenha"
-  $('#senha, #confirmarSenha').on('input', function() {
-    // Verifica se ambos os campos não estão vazios
-    if ($('#senha').val() !== "" && $('#confirmarSenha').val() !== "") {
-      // Verifica se o valor dos campos são iguais
-      if ($('#senha').val() === $('#confirmarSenha').val()) {
-        // Remove a classe invalid-border e adiciona a classe valid-border a ambos os campos
-        $('#senha, #confirmarSenha').removeClass('invalid-border');
-        $('#senha, #confirmarSenha').addClass('valid-border');
-      } else {
-        // Remove a classe valid-border e adiciona a classe invalid-border a ambos os campos
-        $('#senha, #confirmarSenha').removeClass('valid-border');
-        $('#senha, #confirmarSenha').addClass('invalid-border');
-      }
-    } else {
-      // Remove as classes valid-border e invalid-border de ambos os campos
-      $('#senha, #confirmarSenha').removeClass('valid-border');
-      $('#senha, #confirmarSenha').removeClass('invalid-border');
-    }
-  });
-});
-// Validação e-mail
-
-// Espera até que o documento tenha terminado de carregar
-$(document).ready(function() {
   
   // Adiciona um evento "input" para o elemento "email"
   $("#email").on("input", function() {
