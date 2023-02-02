@@ -113,3 +113,17 @@ $(document).ready(function() {
     }
   });
 });
+// Validação do formulário//
+function enviar () {
+  const number = document.getElementById('number').value
+  const email = document.getElementById('inputCEP').value
+  const confirmar = document.getElementById('confirmarSenha').value
+  const nome = document.getElementById('formNome').value
+  if (number === '' && email === '' && confirmar === '' && nome === '') {
+   alert('Por favor, preencha todos os campos')
+  }
+  else{
+    alert('Formulário enviado com sucesso!')
+  }
+};
+
