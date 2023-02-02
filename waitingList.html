@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/globais.css">
+    <link rel="stylesheet" href="./assets/css/waitingList.css">
+    <!-- Fonte título e subtítulo -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>FrontEnders</title>
+    <link rel="icon" href="./assets/img/iconAba.png">   
+</head>
+<body>
+    <header>
+      <!-- Menu e navbar mobile -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-end" id="navbar">
+        <div class="container-fluid">
+          <!-- Logo da Frontenders  -->
+        <img class="navbar-brand" id="logo" src="/assets/img/logoEmpresa.png" alt="Front Enders">
+          <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <!-- Botão Home  -->
+                <a class="nav-item nav-link" id="home-menu" href="index.html">Home</a>
+              </li> <li class="nav-item">
+                <!-- Botão Planos  -->
+                <a class="nav-item nav-link" id="planos-menu" href="plans.html">Planos</a>
+              </li> <li class="nav-item">
+                <!-- Botão Inscreva-se  -->
+                <a class="nav-item nav-link" id="inscrevase-menu" href="waitingList.html">Inscreva-se</a>
+              </li> <li class="nav-item">
+                <!-- Botão Contato  -->
+                <a class="nav-item nav-link" id="contato-menu" href="contact.html">Contato</a>
+              </li> <li class="nav-item">
+                <!-- Botão Login  -->
+                <a class="nav-item nav-link" id="login-menu" href="login.html"><img src="/assets/img/iconLogin.svg" alt="" id="iconLogin">Login</a>
+              </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <!-- Texto principal -->
+        <h1 class="text-center" id="h1">Aqui você pode se cadastrar em nossa lista de espera.</h1>
+        <!-- formulário  -->
+        <form class="container card pb-4" action="" id="Form">
+            <h2 class="text-center" id="listaEspera"> Lista de espera</h2>
+              <fieldset>
+                <div class="content1">
+                  <div class="row mb-4">
+                    <!-- E-mail -->
+                    <div class="col">
+                      <div class="form-outline col-md-11">
+                        <label class="form-label" for="formNome" >Nome</label>
+                        <input type="text" id="formNome" class="form-control" placeholder="Nome completo"  required/>
+                        </div>
+                      </div>
+                      <!-- E-mail -->
+                      <div class="col">
+                        <div class="form-outline col-md-11">
+                          <label class="form-label" for="email">E-mail</label>
+                          <input type="text" id="email" class="form-control" placeholder="Digite seu e-mail" required/>
+                          <span id="error" class="error-message"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Senha -->
+                    <div class="row mb-4">
+                      <div class="col">
+                        <div class="form-outline col-md-11">
+                          <label class="form-label" for="formSenha">Senha</label>
+                            <input id="senha" class="form-control" type="password" placeholder="Senha" required />
+                          </div>
+                        </div>
+                      <!-- Confirmar Senha -->
+                      <div class="col">
+                        <div class="form-outline col-md-11">
+                          <label class="form-label" for="formConfirmar">Confirmar senha</label>
+                          <input type="password" placeholder="Confirmar Senha" id="confirmarSenha" class="form-control" required />
+                        </div>
+                      </div>
+                    </div>
+                     <!-- CEP -->
+                  <div class="row mb-4">
+                    <div class="col"> 
+                      <div class="form-outline col-md-12">
+
+                          <label for="inputCEP" form="form-label">CEP</label>
+                          <input type="text" class="form-control" id="inputCEP" required maxlength="8"> </input>
+
+                      </div>
+                    </div>
+                     <!-- Estado -->
+                      <div class="col">
+                        <div class="form-outline col-md-8">
+                          <label for="inputEstado">Estado</label>
+                          <input type="text" class="form-control" id="inputEstado"  disabled selected> </input>
+                        </div>
+                      </div>
+                      <!-- Cidade -->
+                        <div class="col">
+                          <div class="form-outline col-md-12">
+                            <label for="inputCidade">Cidade</label>
+                            <input type="text" class="form-control" id="inputCidade"  disabled selected> </input>
+                          </div>
+                        </div>
+                      <!-- Bairro -->
+                      <div class="col">
+                        <div class="form-outline col-md-9">
+                          <label for="inputBairro">Bairro</label>
+                          <input type="text" class="form-control" id="inputBairro"  disabled selected> </input>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Rua -->
+                      <div class="row mb-4">
+                        <div class="form-outline col-md-3">
+                          <label for="st">Rua</label>
+                          <input type="text" id="st" name="st" class="form-control"  disabled selected> </input>
+                        </div>
+                      <!-- Numero -->
+                      <div class="col">
+                        <div class="form-outline col-md-5">
+                          <label for="number">Numero</label>
+                          <input type="number" id="number" name="number" class="form-control" required> </input>
+                        </div>
+                      </div>
+                      <!-- Complemento -->
+                    <div class="col">
+                      <div class="form-outline col-md-10">
+                        <label for="complement">Complemento</label>
+                        <input type="text" name="complement" id="complement" maxlength="50" class="form-control"> </input>
+                      </div>
+                    </div>
+                      <!-- Botão de submit -->
+                  <div class="row justify-content-center">
+                    <input class="col-2 .btn " id="btn" type="submit"  onclick="enviar()"> </input>
+                  </div>
+                </div>
+                <!-- Foto do toninho -->
+                  <div class="z-1 position-absolute top-100 start-100 translate-middle  " id="image" alt="Imagem responsiva"> <img src="assets/img/ToninhoForm (1).png" alt="" srcset="">
+                  </div>
+              </div>
+            </fieldset>
+        </form>
+    </main>
+    <!-- Rodapé da pagina  -->
+    <footer class="navbar navbar-expand-lg navbar-nav" id="footer">
+      <p class="footer">Copyright © 2023 de  FrontEnders. Todos os direitos reservados</p>
+    </footer>
+    <!-- JavaScript e AJAX  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="assets/JS/script-WaitingList.js"></script>
+    
+</body>
+</html>

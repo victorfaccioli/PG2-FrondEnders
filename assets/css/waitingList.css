@@ -1,0 +1,121 @@
+/* Configuração para tornar padrão a pagina */
+*{
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+    font-family: 'Nunito', bold, sans-serif !important;
+    color:black;
+
+}
+main, body, html{
+    background-color: #c5c5c5 !important;
+}
+html{
+    width: auto
+}
+input{
+    background-color: white!important;
+    border-radius:40px!important;
+}
+input{
+    border-color: black !important;
+}
+
+
+#listaEspera{
+padding-bottom: 18px;
+margin-top: 10px;
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 100%;
+}
+/* Ajuste no texto principal */
+#h1{
+    font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 130%;
+text-align: center;
+color: #4834D4;
+margin-top: 150px;
+margin-bottom: 80px;
+}
+
+/* Formulario */
+#Form{
+    border-color: #D9D9D9;
+    border-radius: 30px;
+    border-color: #7D23F0;
+    padding: 10px;
+    border-width: 2px;
+    padding-top: 16px;
+    padding-left: 60px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+/* Botão do form */
+#btn {
+    background-color:transparent;
+	border-radius:18px;
+	border:3px solid #7D23F0;
+	display:inline-block;
+	cursor:pointer;
+	font-family:Courier New;
+	font-size:16px;
+	font-weight:bold;
+	padding:9px 29px;
+	text-decoration:none;
+    white-space: nowrap;
+}
+/* CSS do javascript */
+
+/* Borda vermelha e verde para validação do e-mail */
+.custom-input {
+  border-color: green !important;
+}
+
+.custom-error {
+  border-color: red !important;
+  color: red !important;
+  display: inline-block !important;
+}
+
+/* borda vermelha e verde para validação de senha e confirmar senhar */
+.valid-border {
+  border-color: green !important;
+}
+
+.invalid-border {
+  border-color: red !important;
+}
+
+/*Ajuste de responsividade*/
+@media only screen and (max-width:1280px){
+  #image{
+    display: none;
+  }
+}
+@media only screen and (max-width:754px){
+  #btn{
+    width: 170px;
+    margin-top: 8px;
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 414px) {
+  #image{
+    display: none;
+  }
+  #btn{
+    width: 120px;
+    margin-top: 10px;
+    
+  }
+  #Form{
+    padding-left: 5px;
+  }
+}

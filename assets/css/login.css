@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Ajustando tudo o que a dentro do container */
+.container-login{
+    display: flex;
+    width: 100%;
+    max-width: 1120px;
+    margin: 50px auto;
+    border: solid #9471C1;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+/* Ajustando imagem do toninho que fica ao lado do formulário */
+.voando{
+
+    width: 100%;
+    max-width: 553px;
+
+}
+
+/* Ajustando o que está dentro da class content */
+.content{
+    display: flex;
+    width: 100%;
+    max-width: 553px;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.content img{
+    width: 10%;
+}
+
+/* Ajustando o titulo do login */
+.titleLogin{
+    margin: 20px;
+    font-size: 32px;
+    width: 100%;
+    line-height: 20px;
+    padding-left: 10px;
+    color: #4834D4;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Ajustando o formulário a partir de sua class */
+.form-login{
+    width: 100%;
+    max-width: 400px;
+    background: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 20px;
+    border: solid #9471C1;
+    
+}
+
+.form-login h2{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 50px;
+    color: #4834D4;
+}
+.form-login a{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    text-decoration: none;
+}
+
+/* Ajustando os inputs para ficarem organizados */
+.input{
+    width: 100%;
+    margin: 20px;
+    padding-left: 10px;
+    border-radius: 15px;
+    border-bottom: solid;
+    color: #9572C2;
+    margin-bottom: 10px;
+}
+
+/* Ajustando o botão de enviar */
+.btn{
+    width: 100%;
+    height: 50px;
+    max-width: 200px;
+    margin-top: 10px;
+    background: #4834D4;
+    border-radius: 8px 20px;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.btn >a{
+    justify-content: center;
+    color: black;
+}
+
+
+/* Aqui é o olho que mostra e oculta a senha */
+.olho {
+    display: flex;
+    position: relative;
+    bottom: 40px;
+    align-self: flex-end;
+    cursor: pointer;
+    
+  }
+  /* Esse serve para quando o input estiver validado corretamente ele fica com a cor definida. */
+  .custom-input {
+    border-color: green !important;
+  }
+
+  /* Quando estiver inválido, ele deve ficar em vermelho. */
+  .custom-error {
+    border-color: red !important;
+    color: red !important;
+    display: inline-block !important;
+  }
+
+  
+
+/* Ajustando a responsividade */
+@media screen and (max-width: 500px){
+    .voando{
+        display: none;
+    }
+    main{
+        height: 83vh;
+    }
+}

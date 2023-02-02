@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jquery  -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/globais.css">
+    <link rel="stylesheet" href="./assets/css/home.css">
+    <!-- Fonte título e subtítulo -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>FrontEnders</title>
+    <link rel="icon" href="./assets/img/iconAba.png">   
+</head>
+<body>
+    <header>
+      <!-- Menu e navbar mobile -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-end" id="navbar">
+        <div class="container-fluid">
+          <!-- Logo da Frontenders  -->
+        <img class="navbar-brand" id="logo" src="/assets/img/logoEmpresa.png" alt="Front Enders">
+          <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <!-- Botão Home  -->
+                <a class="nav-item nav-link" id="home-menu" href="index.html">Home</a>
+              </li> <li class="nav-item">
+                <!-- Botão Planos  -->
+                <a class="nav-item nav-link" id="planos-menu" href="plans.html">Planos</a>
+              </li> <li class="nav-item">
+                <!-- Botão Inscreva-se  -->
+                <a class="nav-item nav-link" id="inscrevase-menu" href="waitingList.html">Inscreva-se</a>
+              </li> <li class="nav-item">
+                <!-- Botão Contato  -->
+                <a class="nav-item nav-link" id="contato-menu" href="contact.html">Contato</a>
+              </li> <li class="nav-item">
+                <!-- Botão Login  -->
+                <a class="nav-item nav-link" id="login-menu" href="login.html"><img src="/assets/img/iconLogin.svg" alt="" id="iconLogin">Login</a>
+              </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="home">
+      <!-- Banner inicial  -->
+        <div class="content1">
+            <img src="assets/img/Ai.jpg" alt="">
+        </div>
+        <!-- Título Home  -->
+        <div class="title">
+            <h1>Lançamento</h1>
+        </div>
+        <!-- Sub título Home  -->
+        <div class="sub-title">
+            <h2 class="text">Toninho, seu Dev'zinho</h2>
+            <h2 class="text">Seu robo assistente virtual de programação</h2>
+        </div>
+        <div class="content2">
+          <!-- Car 1 Home  -->
+           <div class="card">
+           <h4 class="title_card">IA</h4>
+           <p class="textCard">
+                A tecnologia de inteligência artificial permite ao Toninho mais autonomia e um desempenho mais avançado para ajudar com seus problemas em programação.
+           </p>
+           </div>
+          <!-- Car 2 Home  -->           
+           <div class="card">
+             <h4 class="title_card">Auxiliar de  programadores</h4>
+             <p class="textCard">
+                Pronto para todas as suas dúvidas de programação, o Toninho é seu desenvolvedor assistente que irá te auxiliar desde os primeiros passos na logica em programar até os mais complexos trabalhos
+             </p>
+           </div>
+          <!-- Car 3 Home  -->           
+           <div class="card">
+             <h4 class="title_card">Em qualquer lugar</h4>
+             <p class="textCard">
+                O Toninho é seu assistente virtual que está presente com você digitalmente para facilitar seu trabalho e através do robozinho que está pronto para te ajudar e conversar onde você estiver.
+             </p>
+           </div>
+        </div>
+        <div class="content3">
+          <div class="square1">
+            <!-- Apresentação e imagem Toninho  -->
+            <h3>IA Toninho</h3>
+            <img src="assets/img/toninhoHome.svg" alt="">
+          </div>
+          <div class="square2">
+            <p class="textContent3">Olá, me chamo Toninho, seu dev’zinho.
+                Nasci para te ajudar a se tornar um programador e melhorar suas habilidades na área. Vamos descobrir tudo que somos capazes juntos.
+                 Sou um robo que você pode ter sua casa ou em qualquer lugar!
+            </p>
+            <p>
+              <!-- Chamada cadastramento Lista de espera  -->
+              Clique e cadastre-se na lista para ser um dos primeiros a ter seu Toninho!
+            </p>
+            <!-- Botao redireciona para Lista de espera  -->
+            <button><a href="waitingList.html">Lista de espera</a></button>
+          </div>  
+        </div>
+    </main>
+        <!-- Rodapé da pagina  -->
+        <footer class="navbar navbar-expand-lg navbar-nav" id="footer">
+            <p class="footer">Copyright © 2023 de  FrontEnders. Todos os direitos reservados</p>
+        </footer>
+        <!-- JavaScript e AJAX  -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</body>
+</html>
