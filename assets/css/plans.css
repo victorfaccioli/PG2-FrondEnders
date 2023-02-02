@@ -1,3 +1,4 @@
+/* ----------------- Gerais  */
 *{
     margin: 0;
     padding: 0;
@@ -8,13 +9,16 @@ main > h1{
     margin: 20px 0px;
     text-align: center;
 }
+
+html, body{
+    height: 100%;
+}
+/* ------------- Titulo  */
 h6{
     font-weight: bold;
     font-size: larger;
 }
-html, body{
-    height: 100%;
-}
+/* ---------- Container com os cards  */
 .container{
     height: 100%;
     display: flex;
@@ -25,14 +29,13 @@ html, body{
     height: 250px;
     width: 210px;
 }
+/* ---------- Cards e efeito flip */
 .card{
     position: relative;
     height: 348px;
     width: 250px;
     margin: 20px;
 }
-
-
 .card .flip{
     transition: transform 0.5s;
     transform-style: preserve-3d;
@@ -65,7 +68,7 @@ html, body{
     font-size: larger;
 }
 
-
+/* ------- Cores e estilização em cada card  */
 #card1{
     background-color: #F6EF46;
     border: solid #3C3E03;
@@ -81,6 +84,7 @@ html, body{
     border: solid #005FED;
     border-radius: 10px;  
 }
+/* ------------ Botões redicionamento Inscreva-se  */
 .btn{
     padding-left: 47px;
     padding-right: 47px;
@@ -100,6 +104,7 @@ html, body{
     color: #212529;
     font-weight: bold;
 }
+/* ------------ Responsividade  */
 @media (max-width: 992px) {
     .content2, .content3 {
       max-width: 960px;
