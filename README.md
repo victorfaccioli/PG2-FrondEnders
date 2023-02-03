@@ -3,6 +3,8 @@
 Projeto em grupo criado para apresentação do modulo 2 para Resilia
 
 ### DIARIO: https://github.com/victorfaccioli/PG2-FrontEnders/wiki/Diario
+### FIGMA: https://www.figma.com/file/gNg4UbAbsU9sgyIROhtmLw/GP-2---Squad-5?node-id=0%3A1&t=5tVq5dnp92k7yGW3-1
+### APRESENTAÇÃO: https://www.canva.com/design/DAFY4xykhb0/BhG4JIZaPgXn1gDKvrjyFA/edit?utm_content=DAFY4xykhb0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 
 ## 🚀 Começando
