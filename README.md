@@ -2,6 +2,9 @@
 
 Projeto em grupo criado para apresentação do modulo 2 para Resilia
 
+## DIARIO: https://github.com/victorfaccioli/PG2-FrontEnders.wiki.git
+
+
 ## 🚀 Começando
 
 Essas instruções permitirão que você obtenha uma cópia do projeto em operação na sua máquina local para fins de desenvolvimento e teste.
