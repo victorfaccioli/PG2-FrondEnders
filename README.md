@@ -2,7 +2,7 @@
 
 Projeto em grupo criado para apresentação do modulo 2 para Resilia
 
-## DIARIO: https://github.com/victorfaccioli/PG2-FrontEnders.wiki.git
+### DIARIO: https://github.com/victorfaccioli/PG2-FrontEnders/wiki/Diario
 
 
 ## 🚀 Começando
